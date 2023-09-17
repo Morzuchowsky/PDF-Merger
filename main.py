@@ -1,6 +1,12 @@
-import os
 import PyPDF4
 import re
+import subprocess
+import os
+
+
+# Automatically installs the necessary packages from the requirements.txt file.
+def install_requirements():
+    subprocess.call(["pip", "install", "-r", "requirements.txt"])
 
 
 # Merge PDF files from the given source directory into a single file.

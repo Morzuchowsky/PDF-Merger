@@ -16,8 +16,8 @@ This project provides a simple tool to merge multiple PDF files from a given dir
 
 1. Clone this repository:
 
-```kotlin
-git clone [URL to this repo]
+```bash
+git clone https://github.com/Morzuchowsky/PDF-Merger.git
 ```
 
 2. Navigate to the project directory:
@@ -28,7 +28,7 @@ cd Simple
 
 3. Install the required packages:
 
-```
+```bash
 pip install -r requirements.txt
 ```
 
@@ -36,14 +36,32 @@ pip install -r requirements.txt
 
 To start the program, execute:
 
-```css
+```bash
 python main.py
 ```
 
 Follow the on-screen prompts to merge your PDF files.
 
+## Creating an Executable
+
+If you wish to distribute your application as an executable, follow these steps:
+
+1. Install `pyinstaller`:
+
+```bash
+pip install pyinstaller
+```
+
+2. Navigate to your script's directory and create the executable:
+
+```bash
+pyinstaller --onefile your_script_name.py
+```
+
+This will generate a single `.exe` file in the `dist` directory.
+
+3. Share and execute the `.exe` file on any compatible machine. The user doesn't need to have Python installed.
+
 ## Dependencies
 
 - PyPDF4
-
----
